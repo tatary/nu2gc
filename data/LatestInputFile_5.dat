@@ -1,0 +1,8 @@
+# Hydrogen mass relative to B-band luminosity as a function of M_B-5logh at z =  0.00000
+# (1)M_B-5logh[AB mag] (2-25)M_H/L_B[Msun/Lsun^B]
+# (2-7)E (8-13)S0 (14-19)S (20-25)all
+# (2,8,14,20)mean (3,9,15,21)mean-sigma (4,10,16,22)mean+sigma
+# (5,11,17,23)median (6,12,18,24)25% percentile (7,13,19,25)75% percentile
+# BC03 SSP is used
+# starburst ---  IMF: Chabrier from 0.1 to 100 Msun
+# quiescent ---  IMF: Chabrier from 0.1 to 100 Msun

@@ -1,0 +1,102 @@
+# log file: the adopted parameter values in the calculation are written
+# +--------------------------------------------+
+# |      nGC main body related parameters      |
+# +--------------------------------------------+
+# N-body run: ../70hMpc_512_Planck_MRGT
+# run type:  1 (a redshift)
+# filenames used in the nGC main calculation:
+# --- 0:data/LatestInputFile_0.dat = logfile (THIS FILE)
+# --- 1:data/LatestInputFile_1.dat = physical properties of each galaxy
+# --- 2:data/LatestInputFile_2.dat = luminosity functions in each band
+# --- 3:data/LatestInputFile_3.dat = morphology-dependent luminosity functions in each band
+# --- 4:data/LatestInputFile_4.dat = mass functions & morphology-dependent mass functions
+# --- 5:data/LatestInputFile_5.dat = hydrogen mass relative to B-band luminosity as a function of M_B-5logh
+# --- 6:data/LatestInputFile_6.dat = QSO luminosity functions in each band
+# --- 7:data/LatestInputFile_7.dat = AGN condition
+# --- 8:data/LatestInputFile_8.dat = ID trace
+# Seed for random number:       -131
+# Input 1+z:   1.0000
+# alpst:  -2.1400
+# Vst: 197.0000
+# Vhot: 121.6400 (starburst), 121.6400 (quiescent)
+# alphot:   3.9200 (starburst),   3.9200 (quiescent)
+# SFmodel:  2 = DSF
+# --- eps_SF:   0.4600
+# fmerge:   0.8100
+# fmajor:   0.8900
+# Krem:   1.0000
+# alp_ret:   0.0000
+# off_collision: F
+# equal_mass_merger: T
+# dynamical_response_bulge: T
+# dynamical_response_disk: T
+# dynamical_response_halo: T
+# freheat:   0.5000
+# fb:   1.0000
+# Vlow:   0.0000 [km/s]
+# tauV0:  0.250E+06
+# exttype:  4 = Calzetti-law (Calzetti+00)
+# fdm:   2.0000
+# fdiss:   2.7500
+# em:   0.7500
+# fdi:   0.6300
+# alpha_tau:   0.0000
+# alpha_rad:   0.0000
+# alpha_burst:   1.0000
+# Mh0:   1.0000 [10^14 Msun]
+# alpha_halo:   1.8200
+# f_ngal:   0.2000
+# UVfb:  2 = Okamoto+08 Mc(z)
+# --- zreion:   9.000
+# CoolFN:  2 = Okamoto based cloudy
+# fbh(1):   0.0200
+# fbh(2):   0.0000
+# Mbhseed:  0.100E+04
+# eps_agn:   0.1000
+# tacc_0:   0.5800
+# tacc_1:   1.0000
+# acc:   0.0000
+# alpha_ad:  -4.0000
+# gamma_ad:   3.5000
+# tad_0:   1.0000[Gyr]
+# nwaveq:   9
+# AGNFB_key:  3 = Bower AGN-FB mode (Bower+06)
+# --- alp_bower:   1.14000
+# --- eps_bower:   0.00219
+# ML: F
+# Mbh: F
+# LAE: F
+# SFH: F
+# SN: F
+# SB: F
+# DI: T
+# ML_AGN:  3
+# Edd_max:  10.0000
+# BolCor:  1
+# delay: F
+# run_all_ssp: F
+# nwave:   7
+# --- 1 = B_rest
+# --- 2 = V_rest
+# --- 3 = SDSS_rp_rest
+# --- 4 = 2MASS_Ks_rest
+# --- 5 = Ic_rest
+# --- 6 = SDSS_up_rest
+# --- 7 = GALEX_FUV_rest
+# index for N-body slice: 049
+# used 1+z:   1.0003
+# sspfile for starburst : BC03_ssp_Chabrier_0p1_100_hr_AB_048.dat
+# sspfile for quiescent : BC03_ssp_Chabrier_0p1_100_hr_AB_048.dat
+# --- alpha for burst and quies:   0.5395 (starburst),   0.5395 (quiescent)
+# --- R     for burst and quies:   0.4605 (starburst),   0.4605 (quiescent)
+# --- p     for burst and quies:   0.0258 (starburst),   0.0258 (quiescent)
+# loopz:   1
+# Calzetti-law is adopted
+# lamV =  0.55121 [um], xi(lamV) =    4.03835
+# --- xi( 0.44131[um])/xi(lamV) =    1.24959 (B_rest-band)
+# --- xi( 0.55121[um])/xi(lamV) =    1.00000 (V_rest-band)
+# --- xi( 0.61871[um])/xi(lamV) =    0.87920 (SDSS_rp_rest-band)
+# --- xi( 2.16562[um])/xi(lamV) =    0.09637 (2MASS_Ks_rest-band)
+# --- xi( 0.80599[um])/xi(lamV) =    0.62977 (Ic_rest-band)
+# --- xi( 0.35525[um])/xi(lamV) =    1.50867 (SDSS_up_rest-band)
+# --- xi( 0.15320[um])/xi(lamV) =    2.52843 (GALEX_FUV_rest-band)

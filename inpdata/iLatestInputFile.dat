@@ -1,0 +1,80 @@
+70hMpc_512_Planck_MRGT # file_nbody
+ 1         # param%run_type (1:run at a redshift, 2:run at all redshift, 3:MCMC)
+ 0         # param%traceIDs (0: off 1: on)
+ -131      # param%idum
+ 1.d0 # param%zsp1
+ -2.14d0   # param%alpst (-1.80)
+ 197.d0    # param%Vst (231.7)
+ 121.64d0  # param%Vhot(1) (134.9)
+ 121.64d0  # param%Vhot(2)
+ 3.92d0    # param%alphot(1) (3.20)
+ 3.92d0    # param%alphot(2)
+ 2         # param%SFmodel (1:CSF, 2:DSF, 3: Makiya14)
+ 3.00d0    # param%tau0st [Gyr]
+ 0.46d0    # eps_SF for DSF model (param%SFmodel == 2) (0.26)
+ 9.93d0    # param%emax [Gyr^-1] (param%SFmodel == 3)
+ 0.32d0    # param%emin [Gyr^-1] (param%SFmodel == 3)
+ 0.63d0    # param%Zch [Z_sun] (param%SFmodel == 3)
+ 0.84d0    # param%taud_th (param%SFmodel == 3)
+ 0.81d0    # param%fmerge (0.80) 
+ 0.89d0    # param%fmajor
+ 1.d0      # param%Krem
+ 0.d0      # param%alp_ret (0.0)
+.false.    # param%off_collision
+.true.     # param%equal_mass_merger
+.true.     # param%dynamical_response_bulge
+.true.     # param%dynamical_response_disk
+.true.     # param%dynamical_response_halo
+ 0.5d0     # param%freheat
+ 1.d0      # param%fb
+ 220.d5    # param%Vcut
+ 0.d0      # param%Vlow
+ 2.5d+5    # param%tauV0: 5.d+5 (GALFORM?)
+ 4         # extinction law. (1:MW, 2:LMC, 3:SMC, 4:Calzetti)
+ 2.d0      # param%fdm
+ 2.75d0    # param%fdiss
+ 0.75d0    # param%em  (1.1)
+ 0.63d0    # param%fdi  (5.d-2)
+ 0.d0      # param%alpha_tau
+ 0.d0      # param%alpha_rad
+ 1.d0      # param%alpha_burst
+ 1.d0      # param%Mh0 [10^14 M_sun]
+ 1.82d0    # param%alpha_halo
+ 0.2d0     # param%f_ngal for the number fraction of galaxies to DM halos, added by MARK (2016/Jun/29)
+ 2         # param%UVfb (1:Vlow, 2:Okamoto+08): added by MARK (2014/Mar/12)
+ 9.d0      # param%zreion for Okamoto mode UVfb (param%UVfb == 2; 9.d0 should be provided): added by MARK (2014/Mar/12)
+ 2         # param%CoolFN (1: Sotherland and Dopita, 2: Okamoto cloudy)
+ 2.d-2     # param%fbh(1) (3.5d-3)
+ 0.d0      # param%fbh(2) (0.d0)
+ 1.d3      # param%Mbhseed
+ 0.1d0     # param%eps_agn
+ 0.58d0    # param%tacc_0
+ 1.d0      # param%tacc_1
+ 0.d0      # param%acc
+ -4.d0     # param%alpha_ad
+ 3.5d0     # param%gamma_ad
+ 1.d0      # param%tad_0
+ 9         # param%nwaveq
+ 3         # param%AGNFB_key (1:Vcut, 2:Croton, 3:Bower)
+ 1.d-6     # param%kappa_croton [Msun/yr] for Croton model (param%AGNFB_key == 2)
+ 2.d-1     # param%eta_croton             for Croton model (param%AGNFB_key == 2)
+ 1.14      # param%alp_bower     for Bower model (param%AGNFB_key == 3) (0.90)
+ 2.19d-3   # param%eps_bower for Bower model (param%AGNFB_key == 3) (0.040)
+.false.    # param%ML
+.false.    # param%Mbh
+.false.    # param%LAE
+.false.    # param%SFH
+.false.    # param%SN
+.false.    # param%SB for LF calculation w/ SB limit: If true, the 3rd band given in the last column of this file is used (added by MARK, 2015/Apr/11)
+23.5d0     # param%SBlimit for SB limit, valid only if param%SB = .true. (added by MARK, 2015/Apr/11)
+.true.     # param%DI
+3          # param%ML_AGN 1: L = eMc^2 2: Watarai+00 3: Kawaguchi 03
+10.d0      # param%Edd_max (2.5)
+1          # param%BolCor 1: Marconi+04
+1          # param%ObsFrac 1: Shirakata+18 2: Hopkins+07
+.false.    # param%delay
+.false.    # param%run_all_ssp
+BC03_ssp_Chabrier_0p1_100_hr_AB_z00.dat # sspfilename for starburst
+BC03_ssp_Chabrier_0p1_100_hr_AB_z00.dat # sspfilename for quiescent
+7         # param%nwave
+Br Vr SDSS_rpr 2MASS_Ksr Icr SDSS_upr GALEX_FUVr # param%line_filters (1st & 2nd charactors must be 'Br' and 'Vr', respectively)
