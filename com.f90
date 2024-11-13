@@ -1959,7 +1959,7 @@ SUBROUTINE star(iforest, endhalo, end_step, ionum, nz)
 
      fxi = f_resp_disk(zi, cst); fxf = f_resp_disk(zf, cst)
 
-     tmp = 1.d0/(0.25d0 * D)
+     tmp = 4.d0/D
      Cal_vfvi_disk = sqrt((x + tmp * fxf) / (1.d0 + tmp * fxi))
    END FUNCTION Cal_vfvi_disk
 !!$ ========================================================================
@@ -1973,7 +1973,7 @@ SUBROUTINE star(iforest, endhalo, end_step, ionum, nz)
      cp1 = c + 1.d0; cz  = c * z
      cz1 = sqrt(Square(cz) + 1.d0)
      f_resp_disk = c * (log(cz/2.d0) / cz &
-                  + log((cz1 + 1.d0) * (cz1 / cz + 1.d0) * sqrt(cz1)) / (cz * cz1)) &
+                  + log((cz1 + 1.d0) * (cz1 / cz + 1.d0) / (cz * cz1)) &
                   / (log(cp1) - c / cp1)
    END FUNCTION f_resp_disk
 !!$ ========================================================================
