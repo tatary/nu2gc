@@ -549,6 +549,7 @@ SUBROUTINE star(iforest, endhalo, end_step, ionum, nz)
          !      longer time than the timescale of dynamical friction
          !    and calculate the merger contribution
          ! ===================================================================
+         mgt(1:tmp%num_g)=0 ! Added by TO 2024/12/06 
          nm = 1 ! # of galaxies surviving the dynamical friction
          ID_igal2: DO igal = 1, tmp%num_g
             call InitializeLocalValiablesPerGal
@@ -815,7 +816,8 @@ SUBROUTINE star(iforest, endhalo, end_step, ionum, nz)
 
                ! --- choose the galaxy ID of collision partner randomly
                j = int(dble(ran1(param%idum)) * dble(nm - 1)) + 1
-               IF(j >= igal) j = j + 1 ! ????
+               ! IF(j >= igal) j = j + 1 ! ????
+               IF(j == igal) j = j + 1 ! fixed by TO 2024/12/06 
                ig2 = mgt(j) ! "ig2" is the gal. ID of collision partner of "ig1"
 
                Mb1  = gal(ig1)%Mstarb; Mb2  = gal(ig2)%Mstarb ! bulge mass

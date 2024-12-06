@@ -10,7 +10,8 @@ F77 = mpif90
 #FFLAGS = -O1 -xHOST -mcmodel=large -shared-intel
 #FFLAGS = -fast -extend_source -warn all
 #FFLAGS = -O3 -lm -fbacktrace -Wall -m64 -lmpi -fimplicit-none -fbounds-check 
-FFLAGS = -O3 -lm -lmpi -fallow-argument-mismatch
+#FFLAGS = -O3 -lm -lmpi -fallow-argument-mismatch
+FFLAGS = -O3 -lm -lmpich
 COSMO = lcdm
 #PPS = 071219
 #PPS = 080507
